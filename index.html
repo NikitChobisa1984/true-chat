@@ -229,17 +229,11 @@ body {
           }
         });
         // Function to display a message in the chat
-function displayMessage(message) {
-  const chatMessages = document.getElementById("chat-messages");
-  const messageElement = document.createElement("div");
-  messageElement.classList.add("message");
-  messageElement.textContent = message;
-  chatMessages.appendChild(messageElement);
 
   // Scroll to the bottom of the chat window after a new message is added
   const chatWindow = document.querySelector('.chat-window');
   chatWindow.scrollTop = chatWindow.scrollHeight;
-}
+
 
       
         // No need to reattach the listener inside window.onload since it already exists above.
